@@ -25,6 +25,7 @@
  */
 function rectanglePerimeter(width, height) {
   // Implementation goes here.
+  return (2 * (height + width)).toFixed(2);
 }
 
 /**
@@ -38,6 +39,7 @@ function rectanglePerimeter(width, height) {
  */
 function rectangleArea(width, height) {
   // Implementation goes here.
+  return (width * height).toFixed(2);
 }
 
 /**
@@ -53,6 +55,7 @@ function rectangleArea(width, height) {
  */
 function circleCircumference(radius) {
   // Implementation goes here.
+  return (2 * Math.PI * radius).toFixed(2);
 }
 
 /**
@@ -65,6 +68,7 @@ function circleCircumference(radius) {
  */
 function circleArea(radius) {
   // Implementation goes here.
+  return (Math.PI * (radius ** 2)).toFixed(2);
 }
 
 /**
@@ -78,6 +82,7 @@ function circleArea(radius) {
  */
 function triangleArea(base, height) {
   // Implementation goes here.
+  return ((base * height) / 2).toFixed(2);
 }
 
 /**
@@ -91,6 +96,10 @@ function triangleArea(base, height) {
  */
 function pythagorean(sideA, sideB) {
   // Implementation goes here.
+  return Math.hypot(sideA, sideB).toFixed(2);
+
+  // This also works but I am just used to hypot
+  // return Math.sqrt(sideA ** 2 + sideB ** 2).toFixed(2);
 }
 
 /**
@@ -104,6 +113,7 @@ function pythagorean(sideA, sideB) {
  */
 function rectangleDiagonal(width, height) {
   // Implementation goes here.
+  return Math.hypot(width, height).toFixed(2);
 }
 
 /**
@@ -120,6 +130,7 @@ function rectangleDiagonal(width, height) {
  */
 function trapezoidArea(base1, base2, height) {
   // Implementation goes here.
+  return (((base1 + base2) / 2) * height).toFixed(2);
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.
